@@ -28,8 +28,6 @@ public class UserTests {
     	    DateFormat dateFormat=DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG);
     	    String formattedDate=dateFormat.format(date);
     	    userRepository.save(new User("aa1","aa@126.com","aa","aa123456",formattedDate));
-     
-        Assert.assertEquals(9, userRepository.findAll().size());
      }
      
 }
